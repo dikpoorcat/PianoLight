@@ -10,7 +10,7 @@
 #define DJ		4		//´ý»ú
 #define ZT		5		//ÔÝÍ£
 #define ZC		1		//Õý³£
-#define  LED							"LED"
+#define	LED							"LED"
 
 extern u8 state;
 
