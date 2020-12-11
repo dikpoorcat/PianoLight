@@ -1,0 +1,91 @@
+Dependencies for Project '钢琴灯光项目', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_stm32f10x_hd.s)(0x57BD0145)(--cpu Cortex-M3 -g --apcs=interwork -I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_HD SETA 1"--list ..\obj\listings\startup_stm32f10x_hd.lst --xref -o ..\obj\objects\startup_stm32f10x_hd.o --depend ..\obj\objects\startup_stm32f10x_hd.d)
+F (..\SYSTEM\delay\delay.c)(0x57EE66B2)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\delay.o --omf_browse ..\obj\objects\delay.crf --depend ..\obj\objects\delay.d)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+F (..\SYSTEM\sys\sys.c)(0x5FCF4C84)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\sys.o --omf_browse ..\obj\objects\sys.crf --depend ..\obj\objects\sys.d)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+F (..\SYSTEM\usart\usart.c)(0x57EE6807)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\usart.o --omf_browse ..\obj\objects\usart.crf --depend ..\obj\objects\usart.d)
+I (..\SYSTEM\usart\usart.h)(0x57AEEE43)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\USER\main.h)(0x5FC99819)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+I (..\HARDWARE\WS2812\WS2812.h)(0x5FC997DB)
+I (..\HARDWARE\WDG\wdg.h)(0x54B136D4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\USER\global.h)(0x5FCF3DF8)
+I (..\HARDWARE\ADC\adc.h)(0x57BD028E)
+I (..\HARDWARE\LT_Protocol\LT_Protocol.h)(0x5FD2D862)
+F (.\main.c)(0x5FD2D07A)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\main.o --omf_browse ..\obj\objects\main.crf --depend ..\obj\objects\main.d)
+I (main.h)(0x5FC99819)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\usart\usart.h)(0x57AEEE43)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\USER\main.h)(0x5FC99819)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+I (..\HARDWARE\WS2812\WS2812.h)(0x5FC997DB)
+I (..\HARDWARE\WDG\wdg.h)(0x54B136D4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\USER\global.h)(0x5FCF3DF8)
+I (..\HARDWARE\ADC\adc.h)(0x57BD028E)
+I (..\HARDWARE\LT_Protocol\LT_Protocol.h)(0x5FD2D862)
+F (..\HARDWARE\WS2812\WS2812.c)(0x5FD2D52E)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\ws2812.o --omf_browse ..\obj\objects\ws2812.crf --depend ..\obj\objects\ws2812.d)
+I (..\HARDWARE\WS2812\WS2812.h)(0x5FC997DB)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+I (..\HARDWARE\WDG\wdg.h)(0x54B136D4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\USER\global.h)(0x5FCF3DF8)
+F (..\HARDWARE\WDG\wdg.c)(0x54B136D9)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\wdg.o --omf_browse ..\obj\objects\wdg.crf --depend ..\obj\objects\wdg.d)
+I (..\HARDWARE\WDG\wdg.h)(0x54B136D4)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+F (..\HARDWARE\ADC\adc.c)(0x57BD0341)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\adc.o --omf_browse ..\obj\objects\adc.crf --depend ..\obj\objects\adc.d)
+I (..\HARDWARE\ADC\adc.h)(0x57BD028E)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+F (..\HARDWARE\LT_Protocol\LT_Protocol.c)(0x5FD2D6D9)(-c --cpu Cortex-M3 -g -O0 -Otime --apcs=interwork --split_sections -I..\HARDWARE\WS2812 -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\HARDWARE\WDG -I..\WS2812驱动_F103 -I..\WS2812驱动_F103_V1.0 -I..\USER -I..\HARDWARE\ADC -I..\HARDWARE\LT_Protocol-I H:\GitHub\PianoLight\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD -DSTM32F10X_HD-o ..\obj\objects\lt_protocol.o --omf_browse ..\obj\objects\lt_protocol.crf --depend ..\obj\objects\lt_protocol.d)
+I (..\HARDWARE\LT_Protocol\LT_Protocol.h)(0x5FD2D862)
+I (..\SYSTEM\sys\sys.h)(0x550EC367)
+I (..\SYSTEM\sys\stm32f10x.h)(0x4F1E2E3C)
+I (..\SYSTEM\sys\core_cm3.h)(0x4D523B58)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x4F1E2E3C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\SYSTEM\usart\usart.h)(0x57AEEE43)
+I (..\USER\main.h)(0x5FC99819)
+I (..\SYSTEM\delay\delay.h)(0x555AC61F)
+I (..\HARDWARE\WS2812\WS2812.h)(0x5FC997DB)
+I (..\HARDWARE\WDG\wdg.h)(0x54B136D4)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\USER\global.h)(0x5FCF3DF8)
+I (..\HARDWARE\ADC\adc.h)(0x57BD028E)
+F (.\global.h)(0x5FCF3DF8)()
