@@ -92,6 +92,12 @@ void USART1_IRQHandler(void)
 	u8				res=0;
 	static u16		cmd_len;       												//用于存储当前命令长度
 	
+	if(USART_RX_STA&0x8000)														//已接收完成，未完成处理
+	{
+		res=USART1->DR;															//读一次清中断标志
+		return;
+	}
+	
 	if(USART1->SR&(1<<5))														//接收到数据
 	{	 
 		res=USART1->DR; 														
@@ -104,7 +110,7 @@ void USART1_IRQHandler(void)
 				if(cmd_len>USART_REC_LEN)
 				{
 					USART_RX_STA=0;												//命令过长无法接收，重新开始
-					//加个标志，给上位机回复一下 命令过长无法接收
+					UartReturnCmd(USART_RX_BUF[2], OVERLENGTH);					//串口回复：命令过长无法接收
 					cmd_len = 0;												//重置
 				}
 			}
@@ -117,7 +123,7 @@ void USART1_IRQHandler(void)
 				else
 				{
 					USART_RX_STA=0;												//XOR校验失败，重新开始
-					//加个标志，给上位机回复一下 XOR校验失败
+					UartReturnCmd(USART_RX_BUF[2], XORERR);						//串口回复：XOR校验失败
 				}					
 			}
 		}

@@ -1,6 +1,9 @@
 #include "main.h"
 
+/*全局变量*/
 u8 state;
+
+
 
 /*******************************************************************************
 名称：u8 main(void)
@@ -11,91 +14,32 @@ u8 state;
 *******************************************************************************/
 int main(void)
 {
-	Stm32_Clock_Init(9);		//系统时钟设置
-	uart_init(72,115200);		//串口初始化为115200
-	delay_init(72);	   	 		//延时初始化 
-	WS2812_init();				//LED串初始化
-//	IWDG_Init(4,625);    		//与分频数为64,重载值为625,溢出时间为1s
+	Stm32_Clock_Init(9);														//系统时钟设置
+	uart_init(72,115200);														//串口初始化为115200
+	delay_init(72);	   	 														//延时初始化 
+	WS2812_init();																//LED串初始化
+	IWDG_Init(4,625);    														//与分频数为64,重载值为625,溢出时间为1s
 
 	//485初始化
-	RCC->APB2ENR|=1<<2;    		//使能PORTA时钟	   	    	 
+	RCC->APB2ENR|=1<<2;    														//使能PORTA时钟	   	    	 
 	GPIOA->CRH&=0XFFFFFFF0; 
-	GPIOA->CRH|=0X00000003;		//PA.8 推挽输出   	 
+	GPIOA->CRH|=0X00000003;														//PA.8 推挽输出   	 
 
-	PAout(8)=0;					//485接收
+	PAout(8)=0;																	//485接收
 	
-	state=ZC;					//上电默认待机状态
+	state=ZC;																	//上电默认待机状态
 
 	while(1)
 	{	
 		if(USART_RX_STA & 0x8000)												//若串口接收完成
 		{
-			/*解析协议，灯光控制*/
-			LtCmdLightLed(USART_RX_BUF);
+			LtCmdLightLed(USART_RX_BUF);										//解析协议，灯光控制
+			USART_RX_STA = 0;													//清标记与计数
 		}
-
-
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-//#if WEIDENG
-//		CreateArray(0x00,0xFF,0xFF,0x01FFFFFF,10,&RGB_use0[0][0]);			//要求为水绿
-//		CreateArray(0x00,0xFF,0xFF,0x01FFFFFF,10,&RGB_use1[0][0]);			//要求为水绿
-////		CreateArray(0xff,0x99,0x00,0x01FFFFFF,10,&RGB_use0[0][0]);
-////		CreateArray(0x99,0x00,0xff,0x01FFFFFF,10,&RGB_use0[0][0]);			//紫-红
-////		CreateArray(0x99,0xff,0x00,0x01FFFFFF,10,&RGB_use1[0][0]);			//黄-红
-////		CreateArray(0x00,0x99,0xff,0x01FFFFFF,10,&RGB_use1[0][0]);			//蓝-绿
-////		CreateArray(0x00,0xff,0x99,0x01FFFFFF,10,&RGB_use1[0][0]);			//宝石绿-蓝
-////		CreateArray(0xff,0x99,0x00,0x01FFFFFF,10,&RGB_use1[0][0]);			//橙-黄-绿
-////		CreateArray(0xff,0x00,0x99,0x01FFFFFF,10,&RGB_use1[0][0]);			//粉-紫-蓝
-////		CreateArray(0xf0,0x00,0x99,0x01FFFFFF,10,&RGB_use1[0][0]);			//粉-紫-蓝	
-//		
-//		Huxi2(&RGB_use0[0][0],&RGB_use1[0][0],80,2000);						//400毫秒渐弱50层		
-//#else
-//		switch(state)
-//		{
-//			case GZ:
-//				GuZhang();					//故障指示
-//				break;
-//			case CD:
-//				CongDian();					//充电指示
-//				break;
-//			case DJ:							
-//				DaiJi();					//待机指示
-//				break;
-//			case ZT:
-//				ZanTing();					//暂停指示
-//				break;
-//			case ZC:
-//				ZhengChang();				//工作指示
-//				break;
-//			default:
-//				break;
-//		}	
-//#endif
 	}
 }		
 		
-		
+
 /*******************************************************************************
 名称：void GuZhang(void)
 功能： 故障指示，红色高频闪烁----------------OK
