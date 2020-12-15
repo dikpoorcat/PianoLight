@@ -3,9 +3,9 @@
 <title>Static Call Graph - [..\OBJ\Objects\WS2812Çý¶¯.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\Objects\WS2812Çý¶¯.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Dec 15 17:13:12 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Dec 15 17:51:13 2020
 <BR><P>
-<H3>Maximum Stack Usage =        716 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        724 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
 __rt_entry_main &rArr; main &rArr; LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 <P>
@@ -217,7 +217,7 @@ Global Symbols
 <P><STRONG><a name="[b5]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[53]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
-<BR><BR>[Stack]<UL><LI>Max Depth = 716 + Unknown Stack Size
+<BR><BR>[Stack]<UL><LI>Max Depth = 724 + Unknown Stack Size
 <LI>Call Chain = __rt_entry_main &rArr; main &rArr; LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
@@ -553,7 +553,7 @@ Global Symbols
 
 <P><STRONG><a name="[c2]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[5f]"></a>CongDian</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, main.o(i.CongDian))
+<P><STRONG><a name="[5f]"></a>CongDian</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, main.o(i.CongDian))
 <BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = CongDian &rArr; Jianmang &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Jianmang
@@ -569,7 +569,7 @@ Global Symbols
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DaiJi
 </UL>
 
-<P><STRONG><a name="[61]"></a>DaiJi</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, main.o(i.DaiJi))
+<P><STRONG><a name="[61]"></a>DaiJi</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, main.o(i.DaiJi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 692<LI>Call Chain = DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Huxi2
@@ -596,7 +596,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LtCmdLightLed
 </UL>
 
-<P><STRONG><a name="[68]"></a>GuZhang</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, main.o(i.GuZhang))
+<P><STRONG><a name="[68]"></a>GuZhang</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, main.o(i.GuZhang))
 <BR><BR>[Stack]<UL><LI>Max Depth = 228<LI>Call Chain = GuZhang &rArr; Jianruo &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Jianruo
@@ -673,7 +673,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED0_Send_8bits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MultiSegmentLight
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestModLight
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MultiSegmentLight
 <LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MonochromeModLight
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FullColor2Light
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FullColor1Light
@@ -716,7 +717,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[75]"></a>LtCmdLightLed</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, lt_protocol.o(i.LtCmdLightLed))
-<BR><BR>[Stack]<UL><LI>Max Depth = 716<LI>Call Chain = LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
+<BR><BR>[Stack]<UL><LI>Max Depth = 724<LI>Call Chain = LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestModLight
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MultiSegmentLight
@@ -761,7 +762,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LtCmdLightLed
 </UL>
 
-<P><STRONG><a name="[78]"></a>MultiSegmentLight</STRONG> (Thumb, 104 bytes, Stack size 24 bytes, lt_protocol.o(i.MultiSegmentLight))
+<P><STRONG><a name="[78]"></a>MultiSegmentLight</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, lt_protocol.o(i.MultiSegmentLight))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = MultiSegmentLight &rArr; UartReturnCmd &rArr; XOR_check
 </UL>
 <BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED0_Send_pixel
@@ -778,10 +779,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[76]"></a>TestModLight</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, lt_protocol.o(i.TestModLight))
-<BR><BR>[Stack]<UL><LI>Max Depth = 708<LI>Call Chain = TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
+<P><STRONG><a name="[76]"></a>TestModLight</STRONG> (Thumb, 138 bytes, Stack size 24 bytes, lt_protocol.o(i.TestModLight))
+<BR><BR>[Stack]<UL><LI>Max Depth = 716<LI>Call Chain = TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZhengChang
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED0_Send_pixel
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZhengChang
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ZanTing
 <LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GuZhang
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DaiJi
@@ -826,7 +828,7 @@ Global Symbols
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[7e]"></a>ZanTing</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, main.o(i.ZanTing))
+<P><STRONG><a name="[7e]"></a>ZanTing</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.ZanTing))
 <BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = ZanTing &rArr; Jianruo2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Jianruo2
@@ -835,7 +837,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TestModLight
 </UL>
 
-<P><STRONG><a name="[7f]"></a>ZhengChang</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, main.o(i.ZhengChang))
+<P><STRONG><a name="[7f]"></a>ZhengChang</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, main.o(i.ZhengChang))
 <BR><BR>[Stack]<UL><LI>Max Depth = 428<LI>Call Chain = ZhengChang &rArr; Liushui &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Liushui
@@ -870,7 +872,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[54]"></a>main</STRONG> (Thumb, 108 bytes, Stack size 0 bytes, main.o(i.main))
-<BR><BR>[Stack]<UL><LI>Max Depth = 716<LI>Call Chain = main &rArr; LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
+<BR><BR>[Stack]<UL><LI>Max Depth = 724<LI>Call Chain = main &rArr; LtCmdLightLed &rArr; TestModLight &rArr; DaiJi &rArr; Huxi2 &rArr; Light_LED &rArr; LED1_Send_pixel
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WS2812_init
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LtCmdLightLed

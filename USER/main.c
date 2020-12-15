@@ -49,6 +49,7 @@ int main(void)
 *******************************************************************************/
 void GuZhang(void)
 {
+	state = GZ;
 	CreateArray(255,0,0,0xffffffff,25,&RGB_use0[0][0]);
 	Jianruo(&RGB_use0[0][0],20,600);		//400∫¡√ÎΩ•»ı50≤„
 }
@@ -62,6 +63,7 @@ void GuZhang(void)
 *******************************************************************************/
 void ZanTing(void)
 {
+	state = ZT;
 	CreateArray(0,255,255,0x000E00E0,25,&RGB_use0[0][0]);
 	CreateArray(250,210,6,0x001F01F0,25,&RGB_use1[0][0]);
 	Jianruo2(&RGB_use0[0][0],&RGB_use1[0][0],20,600);		//400∫¡√ÎΩ•»ı50≤„
@@ -76,6 +78,7 @@ void ZanTing(void)
 *******************************************************************************/
 void DaiJi(void)
 {
+	state = DJ;
 	CreateArray(0,255,255,0x01FFFFFF,25,&RGB_use0[0][0]);
 	CreateArray(255,255,0,0x01FFFFFF,25,&RGB_use1[0][0]);
 //	CreateArray(0x99,0x00,0xff,0x01FFFFFF,&RGB_use1[0][0]);
@@ -92,6 +95,7 @@ void DaiJi(void)
 *******************************************************************************/
 void ZhengChang(void)
 {
+	state = ZC;
 	Liushui(0,255,255,250,210,6,12,300);					//LED0/1,300∫¡√Î12LED¡˜ÀÆ;
 }
 
@@ -104,6 +108,7 @@ void ZhengChang(void)
 *******************************************************************************/
 void CongDian(void)
 {
+	state = CD;
 	Jianmang(0,255,255,250,210,6,7,2500);						
 //	Jianmang(0,122,122,120,100,6,3,2500);						
 }

@@ -45,30 +45,38 @@ void LtCmdLightLed(u8 *inBuff)
 *******************************************************************************/
 void TestModLight(u8 *inBuff)
 {
-	u8		err = 0;
+	u8		i,err = 0;
+	u8		arry[3] = {0};
 	
 	/*开始点灯*/
 	USART1->CR1&=0xffffffdf;    												//接收缓冲区非空中断禁用
-	switch(inBuff[5])
+	for(i=0;i<MAX_LED_NUM;i++)
 	{
-		case 0:
-			GuZhang();														
-			break;
-		case 1:
-			CongDian();															
-			break;
-		case 2:							
-			DaiJi();															
-			break;
-		case 3:
-			ZanTing();															
-			break;
-		case 4:
-			ZhengChang();														
-			break;
-		default:
-			err = 0xFF;
-			break;	
+		LED0_Send_pixel(arry);													//先熄灭MAX_LED_NUM个LED
+	}
+	for(i=0;i<5;i++)
+	{
+		switch(inBuff[5])
+		{
+			case 0:
+				GuZhang();														
+				break;
+			case 1:
+				CongDian();															
+				break;
+			case 2:							
+				DaiJi();															
+				break;
+			case 3:
+				ZanTing();															
+				break;
+			case 4:
+				ZhengChang();														
+				break;
+			default:
+				err = 0xFF;
+				break;	
+		}
 	}
 	if(err)	UartReturnCmd(inBuff[2], NOPROGRAM);								//串口回复：预设程序不存在
 	else UartReturnCmd(inBuff[2], SUCCESS);										//串口回复：成功
@@ -191,6 +199,7 @@ void FullColor2Light(u8 *inBuff)
 void MultiSegmentLight(u8 *inBuff)
 {
 	u8		i,j;
+	u8		arry[3] = {0};
 	u8		numSegment = ((inBuff[3]<<8)+inBuff[4]-6)/4;						//计算应点亮led段数
 	
 	/*开始点灯*/
@@ -202,6 +211,10 @@ void MultiSegmentLight(u8 *inBuff)
 			LED0_Send_pixel(inBuff+6+i*4);
 //			LED1_Send_pixel(inBuff+6+i*4);
 		}
+	}
+	for(i=0;i<MAX_LED_NUM;i++)
+	{
+		LED0_Send_pixel(arry);													//熄灭后面MAX_LED_NUM个LED
 	}
 	UartReturnCmd(inBuff[2], SUCCESS);											//串口回复：成功
 	
